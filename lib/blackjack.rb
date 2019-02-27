@@ -48,8 +48,10 @@ end
 
 def runner
   welcome
-  initial_round
-  end_game(card_total)
-  
+  total = initial_round
+  while total < 21
+    total += deal_card
+  end
+  end_game(total)
 end
     
