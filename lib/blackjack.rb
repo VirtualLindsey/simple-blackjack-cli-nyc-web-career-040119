@@ -33,10 +33,7 @@ def hit?(num)
   prompt_user
   input = get_user_input
   if input == "h"
-    deal_card
-    ##increment player's card total by number returned
-  ##else get_user_input != "s" || "h"
-    ##invalid_command
+    card_total = deal_card + card_total
   end 
 end
 
