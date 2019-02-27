@@ -15,7 +15,7 @@ def prompt_user
 end
 
 def get_user_input
-  gets.chomp
+  return gets.chomp
 end
 
 def end_game(card_total)
@@ -30,8 +30,8 @@ end
 
 def hit?(num)
   prompt_user
-  get_user_input
-  if get_user_input == "h"
+  input = get_user_input
+  if input == "h"
     deal_card
     ##increment player's card total by number returned
   ##else get_user_input != "s" || "h"
