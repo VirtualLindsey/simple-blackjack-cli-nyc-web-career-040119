@@ -52,6 +52,7 @@ def runner
   while total < 21
     hit?(total)
     total += deal_card
+    
   end
   end_game(total)
 end
