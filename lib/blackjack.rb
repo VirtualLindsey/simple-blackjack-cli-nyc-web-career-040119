@@ -50,7 +50,7 @@ def runner
   welcome
   total = initial_round
   while total < 21
-    hit
+    hit?(total)
     total += deal_card
   end
   end_game(total)
